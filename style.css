@@ -48,3 +48,48 @@ td.middleText {
     font-style: italic;
 }
 
+.flex-container-second {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+    padding: 0;
+    margin: 16px;
+    list-style: none;
+}
+.secondRow {
+    height: 120px;
+    line-height: 120px;
+    width: 164px;
+    background-size: cover;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.flex-container-first {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+table.main {
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) and (min-height: 720px) {
+    table.main {
+        width: calc(100% - 16px);
+        height: calc(100% - 16px);
+        position: absolute;
+        top: 0; bottom: 0;
+        left: 0; right: 0;
+        margin: 8px 8px 8px 8px;
+    }
+}
+
